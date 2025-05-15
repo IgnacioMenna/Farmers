@@ -1,0 +1,21 @@
+# Node
+node_modules/
+dist/
+
+# Rust
+target/
+Cargo.lock
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Build output
+*.so
+*.rlib
+
+# Otros
+.DS_Store
+.env

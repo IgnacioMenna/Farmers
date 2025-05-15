@@ -1,0 +1,31 @@
+{
+    "name": "hello-solana",
+    "version": "1.0.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Coding-and-Crypto/Rust-Solana-Tutorial.git"
+    },
+    "scripts": {
+        "start": "ts-node src/client/main.ts",
+        "clean": "npm run clean:program",
+        "build:program": "cargo build-sbf --manifest-path=./src/program/Cargo.toml",
+        "clean:program": "cargo clean --manifest-path=./src/program/Cargo.toml && rm -rf ./target/deploy",
+        "test:program": "cargo test-sbf --manifest-path=./src/program/Cargo.toml"
+    },
+    "dependencies": {
+        "@solana/kit": "2.1.1",
+        "@solana/web3.js": "^1.98.2",
+        "mz": "^2.7.0",
+        "tsx": "^4.19.3"
+    },
+    "devDependencies": {
+        "@tsconfig/recommended": "^1.0.1",
+        "@types/mz": "^2.7.2",
+        "ts-node": "10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}
